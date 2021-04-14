@@ -1,0 +1,40 @@
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var nome = prompt("Informe o laboratório onde o exame foi realizado");
+var igmInformado = prompt(nome + ", qual o valor, em UA/mL, do IgM apresentado no laudo?");
+var iggInformado = prompt(nome + ", qual o valor, em UA/mL, do IgG apresentado no laudo?");
+
+
+mostra("Laudo do exame sorológico SARS-CoV-2 Anticorpos IgG e IgM realizado no laboratório " + nome + "." + "<br><br> Obs: resultado baseado nos Métodos Laboratoriais para Diagnóstico da Infecção pelo SARS-CoV-2.<br> Recomendações da Sociedade Brasileira de Patologia Clínica/Medicina Laboratorial.");
+
+if (igmInformado <= 0.8  && iggInformado < 1.4) {mostra("IgM e IgG não reagentes. Você não teve o vírus SARS-CoV-2.");}
+
+if (igmInformado > 1.2  && iggInformado < 1.4) {mostra("IgM reagente e IgG não reagente. Você tem o vírus SARS-CoV-2 e está transmitindo.");}
+
+if (igmInformado > 1.2  && iggInformado >= 1.4) {mostra("IgM e IgG reagentes. Já passou a fase viral, mas está transmitindo.");}
+
+if (igmInformado <= 0.8  && iggInformado >= 1.4) {mostra("IgM não reagente e IgG reagante. Você tem o vírus SARS-CoV-2 e está transmitindo.");}
+
+
+/* OBS: valores de referência do Labooratório Hermes Pardini e utilizados no código.
+
+VALORES DE REFERÊNCIA: 
+	IgM: NÃO REAGENTE : INFERIOR A 0,80 UA/mL
+		 INDETERMINADO: DE 0,80  A 1,20 UA/mL
+		 REAGENTE     : SUPERIOR A 1,20 UA/mL
+	IgG: NÃO REAGENTE : ÍNDICE INFERIOR A 1,40 UA/mL
+		 REAGENTE     : ÍNDICE IGUAL OU SUPERIOR A 1,40 UA/mL
+                             */
+</script>

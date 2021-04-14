@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário Decifrando a COVID-19</title>
+        <link rel="stylesheet" href = "css/style_formulario.css"> 
+    </head>
+
+    <body>
+        <div class="campo">
+            <h1 id="titulo"><strong>Pesquisa sobre a COVID-19 no Brasil</strong></h1>
+            <p id="subtitulo">Você teve a COVID-19? Ajude as instituições brasileiras de pesquisa médica a decifrar o comportamento dessa doença no Brasil.<br>
+            <br>As informações fornecidas abaixo vão para a base de dados do Instituto de Infectologia de São Paulo.</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <p><strong>Informações Gerais</strong></p>
+
+                <div class="campo">
+                    <label for="genero">Gênero</label>
+                    <label>
+                        <input type="radio" name="genero" value="masculino" checked>Masculino
+                    </label>                    
+                    <label>
+                        <input type="radio" name="genero" value="feminino">Feminino
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="idade">Idade</label>
+                    <input type="text" name="idade" id="idade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select id="estado">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Espiríto Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                    </select>        
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <p><strong>Informações Específicas</strong></p>
+
+                    <label><strong>Informe os sintomas:</strong></label><br>
+                    
+                    <input type="checkbox" id="sintoma1" name="sintoma1" value="tosse-seca">
+                    <label for="sintoma1">Tosse Seca</label>
+                                       
+                    <input type="checkbox" id="sintoma2" name="sintoma2" value="dor-de-garganta">
+                    <label for="sintoma2">Dor de garganta</label>
+
+                    <input type="checkbox" id="sintoma3" name="sintoma3" value="cefaleia">
+                    <label for="sintoma3">Cefaleia</label>
+
+                    <input type="checkbox" id="sintoma4" name="sintoma4" value="secrecao-nasal">
+                    <label for="sintoma4">Secreção nasal</label>
+
+                    <input type="checkbox" id="sintoma5" name="sintoma5" value="febre">
+                    <label for="sintoma5">Febre</label>
+
+                    <input type="checkbox" id="sintoma6" name="sintoma6" value="diarreia">
+                    <label for="sintoma6">Diarreia</label>
+
+                    <input type="checkbox" id="sintoma7" name="sintoma7" value="dificuldade-respirar">
+                    <label for="sintoma7">Dificuldade de respirar</label>   
+                    
+                    <input type="checkbox" id="sintoma8" name="sintoma8" value="nenhum">
+                    <label for="sintoma8">Nenhum</label>  
+                    
+                    <br><br>
+
+                    <label>Outros sintomas</label>
+                    <input type="text" name="outros-sintomas" id="outros-sintomas">
+                </div>
+
+                <br>
+
+                <div class="campo">
+                    <label><strong>Precisou ser internado(a)?</strong></label>
+                    <br>
+                    <label>
+                        <input type="radio" name="internamento" value="sim" checked>Sim
+                    </label>
+
+                    <label>
+                        <input type="radio" name="internamento" value="nao">Não
+                    </label>
+                </div>
+
+                <br>
+
+                <div class="campo">
+                    <label><strong>Caso tenha sido internado(a), precisou ser encaminhado(a) para Unidade de Tratamento Intensivo (UTI)?</strong></label>
+                    <br>
+                    <label>
+                        <input type="radio" name="uti" value="sim" checked>Sim
+                    </label>
+
+                    <label>
+                        <input type="radio" name="uti" value="nao">Não
+                    </label>
+                </div>
+
+                <br>
+
+                <div class="campo">
+                    <label><strong>Recebeu atendimento no serviço de saúde público (SUS) ou privado (particular)?</strong></label>
+                    <br>
+                    <label>
+                        <input type="radio" name="atendimento" value="publico" checked>Público (SUS)
+                    </label>
+
+                    <label>
+                        <input type="radio" name="atendimento" value="privado">Privado (Particular)
+                    </label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <label class="grupo"><strong>Comentários e relatos complementares:</strong></label><br>
+
+            <div class="campo">  
+                <textarea row="8" style="width:400px" id="comentarios" name="comentarios"></textarea>
+            </div>
+
+            <button class="botao" type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

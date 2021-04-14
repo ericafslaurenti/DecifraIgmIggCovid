@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UT-8">
+        <title>Decifra Anticorpos COVID-19</title>
+
+        <link rel="stylesheet" href = "css/style_covid.css">      
+    </head>
+
+    <body>
+        
+        <header class="header">
+            <h1 class="titulo-topo">Decifra Anticorpos<br>COVID-19 <br><br></h1>
+            <img id="banner" src="img/banner-covid.jpg">
+        </header>    
+
+        <div class="principal">
+            <h2 class="titulo-principal">Quais os exames realizados no diagnóstico da COVID-19?</h2>
+
+            <p class="paragrafo1">
+                A doença vem sendo detectada através de dois tipos principais de exames: detecção do vírus por PCR (Reação em cadeia da Polimerase) e os testes sorológicos (anticorpos presente no sangue).<br>
+                <br>No PCR, para detectar a doença, é utilizada uma amostra de secreção nasal, de orofaringe (garganta) ou escarro. 
+                Pode ser positivo já nos primeiros dias após o início dos sintomas, mas tende a ser negativo com o passar dos dias da infecção (mais que sete dias).<br>
+                <br>Já os testes sorológicos dosam no sangue os anticorpos, substâncias produzidas por nosso sistema imunitário para neutralizar o vírus.
+                Na COVID-19, os anticorpos aparecem por volta de sete dias após início dos sintomas. 
+                Os anticorpos da classe <strong>IgM (imunoglobulina M)</strong> aparecem primeiro que os da classe <strong>IgG (imunoglobulina G)</strong>, que surgem após cerca de duas semanas do contágio.<br>
+            </p>
+
+            <p id="missao">
+                <em>O intuito dessa página é te ajudar <strong>a interpretar o resultado do teste sorológico que detecta os anticorpos IgG e IgM.</strong></em>
+            </p>
+        </div>
+
+        <div class="secundario">
+            <h3 class="titulo-secundario">Sinais e Sintomas da Covid-19</h3>
+
+        <!--
+            <ul>
+                <li class="itens">Tosse</li>
+                <li class="itens">Febre</li>
+                <li class="itens">Dor de cabeça</li>
+                <li class="itens">Dor de garganta</li>
+                <li class="itens">Coriza</li>
+                <li class="itens">Perda do Olfato e/ou paladar</li>
+                <li class="itens">Diarreia, vômito e náuseas</li>
+                <li class="itens">Dificuldades para respirar</li>
+            </ul>
+        --> 
+        <!--
+            <p id="paragrafo2">Alguns dos principais sintomas de COVID-19. Ilustração: annarodriguezdesign / Shutterstock.com</p>
+        -->
+        </div>
+
+        <img id="figsintomas" src = "img/sintomas_covid.jpg">
+
+        <div class="terciario">
+            <h4 class="titulo-terciario">Diagnóstico do Exame Sorológico SARS-CoV-2</h4>
+            <p class="paragrafo3">
+                Recebeu o resultado do exame sorológico sem o diagnóstico?<br> 
+                <strong>O Decifra Anticorpos SARS-CoV-2</strong> pode te ajudar!<br>
+                <br>Esta aplicação foi desenvolvida por uma equipe da Meet Up <strong><a href = "https://www.cloudgirls.com.br">Cloud Girls</a></strong>, <br>baseado nos valores de referência do <strong><a href = "https://www.hermespardini.com.br/">Laboratório Hermes Pardini</a></strong>.<br> 
+                <br>Confira abaixo se você foi infectado ou não pelo coronavírus.<br>
+                Caso tenha sido infectado, poderá identificar em qual estágio viral se encontra.<br>
+                <br>Se você foi infectado pelo SARS-CoV-2, participe da nossa pesquisa! Estamos ajudando as instituições de pesquisa médica na construção do portifólio da COVID-19 no Brasil. Acesse o formulário <strong><a href = "formulario.html">Decifrando a COVID-19</a></strong>.
+            </p>
+        </div>
+
+		<form id="form-adiciona">
+            <h5 class="titulo-terciario">Decifra Anticorpos SARS-Cov-2</h5>
+            <!-- <div id="form-group"> -->
+                <div class="grupo">
+                    <label for="nome">Nome do Laboratório:</label>
+                    <input id="nome" name="nome" type="text" placeholder="digite nome do laboratório" class="campo">
+                </div>
+
+                <div class="grupo">
+                    <label for="igm">Valor do IgM:</label>
+                    <input id="igm" name="igm" type="text" placeholder="digite o valor do igG" class="campo campo-medio">
+                </div>
+
+                <div class="grupo">
+                    <label for="igg">Valor do IgG:</label>
+                    <input id="igg" name="igg" type="text" placeholder="digite o valor do IgM" class="campo campo-medio">
+                </div>
+            <!-- </div> -->
+
+            <button id="botao-diagnostico">Avaliar o resultado</button>
+        </form> 
+        
+        
+
+        <script src = "js/teste_igg_igm.js"></script>
+
+    </body>
+
+    <footer>
+        <p class = "copyright">&copy; Copyright Diagnóstico COVID19 - 2021</p>
+    </footer>
+</html>
+
+<!--
+    O <strong><a href ="interpretacao_igg_igm.html">Decifra Anticorpos</a></strong> pode te ajudar! 
+    Para mais informações sobre a COVID-19, acesse o site <strong><a href = "https://covid.saude.gov.br/">Coronavírus Brasil</a></strong>, do governo federal.
+-->
